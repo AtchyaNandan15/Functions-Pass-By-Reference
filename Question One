@@ -1,0 +1,44 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int change(int &n1,int &n2,int &n3);
+
+int main()
+{
+
+int num1,num2,num3;
+int sum;
+
+cout<<"Enter three numbers";
+cin>>num1;
+cin>>num2;
+cin>>num3;
+
+sum = change(num1,num2,num3);
+
+cout<<" Your numbers are in the main are "<<num1<<","<<num2<<","<<num3<<"\n";
+cout<<sum;
+
+}
+
+//if you take away the and symbols then it won't add
+int change(int &n1,int &n2,int &n3) {
+    
+    n1=n1+n1;
+    n2+=5;
+    n3=n3*n1;
+    
+    return(n1+n2+n3);
+    cout<<" \nYour numbers are in the function are "<<n1<<","<<n2<<","<<n3;
+
+
+}
