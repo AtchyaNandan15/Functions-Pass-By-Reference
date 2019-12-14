@@ -7,30 +7,34 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <iostream>
+
 using namespace std;
 
-void wage12(float &w12);
+void change(int &w1);
 
 int main()
 {
-    
-float wage;
+  
+  int word;
 
-do{
-cout<<"Enter your wage";
-cin>>wage;
 
-wage12(wage);
-
-cout<<wage<<"\n";
-
-}while(wage>0);
-
+  cout<<" Enter a word";
+  cin>>word;
 }
 
-void wage12(float &w12) {
-w12 = w12+w12*0.12;
+
+void change(int &w1) {
     
     
 }
+
+//take the users word
+//count the number of letters in the word
+//use the replace function
+//then for each number until 26 you can change it to another letters
+//example ask for the word atchya
+//the number one is a and it called 1 in the length and than you can change it
+//replace that letter with another letter
+
+
 
