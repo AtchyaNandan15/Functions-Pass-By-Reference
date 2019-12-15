@@ -35,6 +35,7 @@ void change(int &w1) {
 //example ask for the word atchya
 //the number one is a and it called 1 in the length and than you can change it
 //replace that letter with another letter
+//multiply by two
 
 
 
