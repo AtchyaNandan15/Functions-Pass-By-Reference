@@ -1,0 +1,144 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include<string>
+#include <ctype.h>
+
+using namespace std;
+
+void change(string &w1);
+
+int main()
+{
+  
+  string word;
+  int w;
+  int lengths;
+
+
+  cout<<" Enter a word";
+  cin>>word;
+  
+
+  
+   for(w=0;w<word.length();w++) {
+      
+      word[w]=tolower(word[w]);
+  }
+  
+  change(word);
+
+cout<<word<<"\n";
+}
+
+
+void change(string &w1) {
+    
+    int len;
+    int i;
+   
+    len = w1.length();
+    for(i=0;i<len;i++) {
+   
+ 
+  
+  if(w1[i]=='a'){
+     w1[i]='v';
+     }
+  
+    if(w1[i]=='b'){
+     w1[i]='r';
+    }
+    if(w1[i]=='c'){
+     w1[i]='a';
+    }
+      if(w1[i]=='d'){
+     w1[i]='h';
+    }
+    /*
+      if(w1[i]=='e'){
+     w1[i]='e';
+    }
+      if(w1[i]=='f'){
+     w1[i]='w';
+    }
+      if(w1[i]=='g'){
+     w1[i]='n';
+    }
+      if(w1[i]=='h'){
+     w1[i]='d';
+    }
+      if(w1[i]=='i'){
+     w1[i]='u';
+    }
+      if(w1[i]=='j'){
+     w1[i]='o';
+    }
+      if(w1[i]=='k'){
+     w1[i]='q';
+    }
+      if(w1[i]=='l'){
+     w1[i]='y';
+    }
+      if(w1[i]=='m'){
+     w1[i]='s';
+    }
+      if(w1[i]=='n'){
+     w1[i]='r';
+    }
+      if(w1[i]=='o'){
+     w1[i]='f';
+    }
+      if(w1[i]=='p'){
+     w1[i]='i';
+    }
+      if(w1[i]=='q'){
+     w1[i]='c';
+    }
+    
+      if(w1[i]=='r'){
+     w1[i]='z';
+    }
+      if(w1[i]=='s'){
+     w1[i]='g';
+    }
+      if(w1[i]=='t'){
+     w1[i]='m';
+    }
+      if(w1[i]=='u'){
+     w1[i]='j';
+    }
+      if(w1[i]=='v'){
+     w1[i]='k';
+    }
+      if(w1[i]=='w'){
+     w1[i]='l';
+    }
+      if(w1[i]=='x'){
+     w1[i]='p';
+    }
+      if(w1[i]=='y'){
+     w1[i]='b';
+    }
+      if(w1[i]=='z'){
+     w1[i]='t';
+    }
+*/
+     
+ }
+    
+}
+
+
+
+
+
+
+
+
