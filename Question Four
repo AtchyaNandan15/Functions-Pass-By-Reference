@@ -14,10 +14,7 @@
                     int w...........................................for the for loop
                     int leng........................................measures the amount of letters for the second word
                     int a........................................for the for loop
-
-
-
-                    
+                    http://accordingtobenedict.com/film-tv/enigma-part-3-the-substitution-cipher/
                     
 ********************************************************************************************************************/
 
@@ -265,6 +262,7 @@ void back(string &w2) {
     }
     
 }
+
 
  
 
