@@ -1,10 +1,13 @@
-/******************************************************************************
+/********************************************************************************************************************
+*  Atchya Nandan                                                                                       
+*  Date: December 15th 2019                                                                      
+*  Program: Dev c++ 5.11                                                                               
+*  Purpose: Learn how to use pass by referance functions                                                      
+* ---------------------------------------------------------------------                                
+* Date Dictionary:  int num1,num2,num3.....................................the use enters three numbers
+                    int n1,n2,n3...........................................the three numbers in the function
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
+********************************************************************************************************************/
 
 #include <iostream>
 
@@ -16,7 +19,6 @@ int main()
 {
 
 int num1,num2,num3;
-int sum;
 
 cout<<"Enter three numbers";
 cin>>num1;
