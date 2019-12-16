@@ -7,35 +7,68 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <iostream>
+#include<string>
+#include <ctype.h>
 
 using namespace std;
 
-void change(int &w1);
+void change(string &w1);
 
 int main()
 {
   
-  int word;
+  string word;
+  int w;
+  int lengths;
 
 
   cout<<" Enter a word";
   cin>>word;
+  
+
+  
+   for(w=0;w<word.length();w++) {
+      
+      word[w]=tolower(word[w]);
+  }
+  
+  change(word);
+
+cout<<word<<"\n";
 }
 
 
-void change(int &w1) {
+void change(string &w1) {
     
+    int len;
+    int i;
+   
+    len = w1.length();
+    for(i=0;i<len;i++) {
+   
+ 
+  
+  if(w1[i]=='a'){
+     w1[i]='v';
+    
+  }
+  
+  if(w1[i]=='b'){
+     w1[i]='r';
+    
+  }
+  
+
+     
+ }
+ 
     
 }
 
-//take the users word
-//count the number of letters in the word
-//use the replace function
-//then for each number until 26 you can change it to another letters
-//example ask for the word atchya
-//the number one is a and it called 1 in the length and than you can change it
-//replace that letter with another letter
-//multiply by two
+
+
+
+
 
 
 
