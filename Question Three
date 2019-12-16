@@ -1,10 +1,17 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
+/********************************************************************************************************************
+*  Atchya Nandan                                                                                       
+*  Date: December 15th 2019                                                                      
+*  Program: Dev c++ 5.11                                                                               
+*  Purpose: Learn how to use pass by referance functions                                                      
+* ---------------------------------------------------------------------                                
+* Date Dictionary:  string word.....................................the user enters the word
+                    int w...........................................for the for loop
+                    int w1...........................................the word in the function
+                    int len...........................................measures the number of letters in the word
+                    int i.............................................for the for loop
+                    int w...........................................for the for loop
+                    
+********************************************************************************************************************/
 
 #include <iostream>
 #include<string>
