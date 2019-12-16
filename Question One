@@ -4,7 +4,7 @@
 *  Program: Dev c++ 5.11                                                                               
 *  Purpose: Learn how to use pass by referance functions                                                      
 * ---------------------------------------------------------------------                                
-* Date Dictionary:  int num1,num2,num3.....................................the use enters three numbers
+* Date Dictionary:  int num1,num2,num3.....................................the user enters three numbers
                     int n1,n2,n3...........................................the three numbers in the function
 
 ********************************************************************************************************************/
