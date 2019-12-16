@@ -1,0 +1,259 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include<string>
+#include <ctype.h>
+
+using namespace std;
+
+void change(string &w1);
+void back(string &w2);
+
+
+int main()
+{
+  
+  string word;
+  string word2;
+  int w;
+  int lengths;
+  
+
+
+  cout<<" Enter your word";
+  cin>>word;
+  
+
+  
+
+  
+   for(w=0;w<word.length();w++) {
+      
+      word[w]=tolower(word[w]);
+  }
+  
+change (word);
+cout<<word<<"\n";
+
+cout<<"Enter your encrypted word";
+cin>>word2;
+
+back(word2);
+cout<<word2<<"\n";
+
+
+}
+
+
+void change(string &w1) {
+    
+    int len;
+    int i;
+   
+    len = w1.length();
+    for(i=0;i<len;i++) {
+   
+ 
+  
+    if(w1[i]=='a'){
+     w1[i]='v';
+     }
+  
+    else if(w1[i]=='b'){
+     w1[i]='r';
+    }
+    else if(w1[i]=='c'){
+     w1[i]='a';
+    }
+    else if(w1[i]=='d'){
+     w1[i]='h';
+    }
+    
+    else if(w1[i]=='e'){
+     w1[i]='e';
+    }
+    else if(w1[i]=='f'){
+     w1[i]='w';
+    }
+    
+    else if(w1[i]=='g'){
+     w1[i]='n';
+    }
+    
+    else if(w1[i]=='h'){
+     w1[i]='d';
+    }
+    
+    else if(w1[i]=='i'){
+     w1[i]='u';
+    }
+    
+    else if(w1[i]=='j'){
+     w1[i]='o';
+    }
+    else if(w1[i]=='k'){
+     w1[i]='q';
+    }
+    else if(w1[i]=='l'){
+     w1[i]='y';
+    }
+    else if(w1[i]=='m'){
+     w1[i]='s';
+    }
+    else if(w1[i]=='n'){
+     w1[i]='x';
+    }
+    else if(w1[i]=='o'){
+     w1[i]='f';
+    }
+    else if(w1[i]=='p'){
+     w1[i]='i';
+    }
+    else if(w1[i]=='q'){
+     w1[i]='c';
+    }
+    
+    else if(w1[i]=='r'){
+     w1[i]='z';
+    }
+    else if(w1[i]=='s'){
+     w1[i]='g';
+    }
+    else if(w1[i]=='t'){
+     w1[i]='m';
+    }
+    else if(w1[i]=='u'){
+     w1[i]='j';
+    }
+    else if(w1[i]=='v'){
+     w1[i]='k';
+    }
+    else if(w1[i]=='w'){
+     w1[i]='l';
+    }
+    else if(w1[i]=='x'){
+     w1[i]='p';
+    }
+    else if(w1[i]=='y'){
+     w1[i]='b';
+    }
+    else if(w1[i]=='z'){
+     w1[i]='t';
+    }
+
+     
+ }
+    
+}
+
+void back(string &w2) {
+    
+    int leng;
+    int a;
+   
+    leng = w2.length();
+    for(a=0;a<leng;a++) {
+   
+ 
+  if(w2[a]=='v'){
+     w2[a]='a';
+     }
+  
+    else if(w2[a]=='r'){
+     w2[a]='b';
+    }
+    else if(w2[a]=='a'){
+     w2[a]='c';
+    }
+    else if(w2[a]=='h'){
+     w2[a]='d';
+    }
+    
+    else if(w2[a]=='e'){
+     w2[a]='e';
+    }
+    else if(w2[a]=='w'){
+     w2[a]='f';
+    }
+    
+    else if(w2[a]=='n'){
+     w2[a]='g';
+    }
+    
+    else if(w2[a]=='d'){
+     w2[a]='h';
+    }
+    
+    else if(w2[a]=='u'){
+     w2[a]='i';
+    }
+    
+    else if(w2[a]=='o'){
+     w2[a]='j';
+    }
+    else if(w2[a]=='q'){
+     w2[a]='k';
+    }
+    else if(w2[a]=='y'){
+     w2[a]='l';
+    }
+    else  if(w2[a]=='s'){
+     w2[a]='m';
+    }
+    else if(w2[a]=='x'){
+     w2[a]='n';
+    }
+    else if(w2[a]=='f'){
+     w2[a]='o';
+    }
+    else if(w2[a]=='i'){
+     w2[a]='p';
+    }
+    else if(w2[a]=='c'){
+     w2[a]='q';
+    }
+    
+    else if(w2[a]=='z'){
+     w2[a]='r';
+    }
+    else if(w2[a]=='g'){
+     w2[a]='s';
+    }
+    else if(w2[a]=='m'){
+     w2[a]='t';
+    }
+    else if(w2[a]=='j'){
+     w2[a]='u';
+    }
+    else if(w2[a]=='k'){
+     w2[a]='v';
+    }
+    else if(w2[a]=='l'){
+     w2[a]='w';
+    }
+    else if(w2[a]=='p'){
+     w2[a]='x';
+    }
+    else if(w2[a]=='b'){
+     w2[a]='y';
+    }
+    else if(w2[2]=='t'){
+     w2[a]='z';
+    }
+     
+    }
+    
+}
+
+
+
+
+
+
+
