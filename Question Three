@@ -6,7 +6,7 @@
 * ---------------------------------------------------------------------                                
 * Date Dictionary:  string word.....................................the user enters the word
                     int w...........................................for the for loop
-                    int w1...........................................the word in the function
+                    string w1...........................................the word in the function
                     int len...........................................measures the number of letters in the word
                     int i.............................................for the for loop
                     int w...........................................for the for loop
