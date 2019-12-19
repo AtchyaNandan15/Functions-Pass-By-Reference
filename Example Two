@@ -1,0 +1,141 @@
+#include<iostream>
+
+using namespace std;
+
+
+// function delerations go here
+/* MainMenu, SnackMenu, Movie Menu and printTotal are you function names*/
+
+int MainMenu();
+float SnackMenu();
+int MovieMenu(int[3], int[3]);
+void printTotal(int[3], int[3], int, float);
+
+int main()
+{
+   int option;
+
+   int movieoptionAdult[3]={0,0,0};
+   int movieoptionChild[3]={0,0,0};
+   float snackCost=0;
+   int movieCost=0;
+   float totalCost=0;
+
+   do
+   {
+
+       option = MainMenu();  //this function will give options to buy movie, snack or Total cost oweing.
+       //system ("cls");
+       switch (option)
+       {
+           case 1:
+               snackCost+=SnackMenu();
+               /* This function will not keep track of what they are buying.  They should have 3 options.  The total cost for their food is returned*/
+               break;
+
+
+           case 2:
+
+               /*Make up the 3 movies and you can pick the price too.  All adult ticket prices are the same and all kid ticket prices are the same*/
+               movieCost+=MovieMenu(movieoptionAdult,movieoptionChild);
+               /*This function will return the total cost for the movies before tax
+This function will have to hold how many tickets for each movie what bought.  And print it to the screen.  You will have 3 movie
+choices, adult and childerens tickets*/
+               break;
+
+           case 3:
+               cout<<"Printing Tickets";
+               break;
+
+           default: cout << "Not a valid Option.";
+               break;
+       }
+   }while (option != 3);
+
+   //exit loop when option 3 is picked.
+   printTotal(movieoptionAdult,movieoptionChild,movieCost,snackCost);
+   /*This function will print out the how many adults and childern are going to each movie and the total amount owed for snacks and movie*/
+}
+
+int MainMenu() {
+   int option;
+   while (true) {
+       cout << "Buy Snack (1), Buy Ticket (2), Check Out (3)" << endl;
+       cin  >> option;
+       if (option > 0 && option < 4) {
+           return option;
+       }
+       cout << "Invalid Option" << endl;
+   }
+}
+
+float SnackMenu() {
+   int option, total = 0;
+   while (true) {
+       cout << "Skittles - $10.99 (1), Coke - $4.99 (2), Popcorn - $20.99 (3), Check Out (4)" << endl;
+       cin  >> option;
+       if (option < 1 || option > 4) {
+           cout << "Invalid Option" << endl;
+       } else if (option == 1) {
+           total += 10.99;
+       } else if (option == 2) {
+           total += 4.99;
+       } else if (option == 3) {
+           total += 20.99;
+       } else if (option == 4) {
+           return total;
+       }
+   }
+}
+
+int MovieMenu(int adult[3], int kid[3]) {
+   int option, option2, indexA = 0, indexC = 0, total = 0;
+   while (true) {
+       if (indexA == 3 || indexC == 3) { return total; }
+       cout << "Movie Selection:" << endl;
+       cout << "   - Avengers, Endgame (1)" << endl;
+       cout << "   - Sonic The Hedgehog (2)" << endl;
+       cout << "   - Detective Pikachu (3)" << endl;
+       cout << "   - EXIT (4)" << endl;
+       cin >> option;
+       if (option == 4) { return total;}
+       if (option < 0 || option > 4) {
+           cout << "Invalid Option" << endl;
+           continue;
+       }
+       cout << "Adult - $40 (1) or Child - $30 (2)" << endl;
+       cin >> option2;
+       if (option2 == 1) {
+           cout << "Ticket bought" << endl;
+           total += 40;
+           adult[indexA] = option;
+           indexA ++;
+       } else if (option2 == 2) {
+           cout << "Ticket bought" << endl;
+           total += 30;
+           kid[indexC] = option;
+           indexC ++;
+       } else {
+           cout << "Invalid Option" << endl;
+       }
+   }
+}
+
+void printTotal(int adult[3], int kid[3], int movieP, float snackP) {
+   int total = 0;
+   cout << "   - Avengers, Endgame (1)" << endl;
+   cout << "   - Sonic The Hedgehog (2)" << endl;
+   cout << "   - Detective Pikachu (3)" << endl;
+   cout << "Tickets: " << endl;
+   for (int i = 0; i < 3; i ++) {
+       if (adult[i] == 0) {continue;}
+       cout << "(" << adult[i] << ") - $40" << endl;
+   }
+   for (int i = 0; i < 3; i ++) {
+       if (kid[i] == 0) { continue;}
+       cout << "(" << kid[i] << ") - $30" << endl;
+   }
+   cout << "Movie total: " << movieP << endl;
+   cout << "Snack total: " << snackP << endl;
+   cout << "Final total: " << movieP + snackP << endl;
+}
